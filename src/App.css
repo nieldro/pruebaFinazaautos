@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #90ee90; /* Color verde claro */
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.3s ease; /* Transición suave */
+ }
+ 
+ .header h1 {
+  margin: 0;
+  color: #000; /* Color del texto del nombre de la empresa */
+  font-size: 24px; /* Aumentar el tamaño de la fuente */
+  font-weight: bold; /* Hacer el texto más pesado */
+ }
+ 
+ .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Transición suave */
+ }
+ 
+ .profile-pic:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+ }
+ 
+ .table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+ }
+ 
+ .container {
+  background-color: #f0f0f0; /* Color gris claro */
+  padding: 20px; /* Añadir padding al contenedor */
+ }
+ 
+ /* Estilo para el fondo general de la aplicación */
+ .container {
+  background-color: #f0f0f0; /* Color gris claro */
+  padding: 20px; /* Añadir padding al contenedor */
+ }
+ 
+ /* Estilo para el botón de inserción */
+ .btn-success {
+  background-color: #28a745; /* Color verde oscuro para el botón */
+  border-color: #28a745;
+  transition: background-color 0.3s ease; /* Transición suave */
+ }
+ 
+ .btn-success:hover {
+  background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+ }
+ 
+ /* Estilo para los botones de acción en la tabla */
+ .btn-primary, .btn-info, .btn-danger {
+  background-color: #007bff; /* Color azul para los botones */
+  border-color: #007bff;
+  transition: background-color 0.3s ease; /* Transición suave */
+ }
+ 
+ .btn-primary:hover, .btn-info:hover, .btn-danger:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+ }
+ 
+ /* Estilo para los formularios */
+ .form-group label {
+  font-weight: bold; /* Hacer el texto de las etiquetas más pesado */
+ }
+ 
+ .form-group input, .form-group select {
+  border-radius: 5px; /* Redondear las esquinas de los campos de entrada */
+  padding: 5px; /* Añadir padding a los campos de entrada */
+ }
+ 
